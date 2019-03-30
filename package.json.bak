@@ -47,7 +47,7 @@
   },
   "scripts": {
     "develop": "gatsby develop",
-    "build": "npm install preact-cli && preact build",
+    "build": "npm run clean & gatsby build & copy",
     "clean:public": "rm -rf public",
     "clean": "npm run clean:public",
     "copy:files": "cp pages/*.{pdf,txt,png,jpg,jpeg,gif} public/",
